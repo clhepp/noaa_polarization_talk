@@ -1,0 +1,11 @@
+# Exclude list for latext document
+
+# exclude nav aux log snm toc files
+*.aux
+*.log
+*.nav
+*.out
+*.synctex.gz
+*.toc
+*.snm
+
