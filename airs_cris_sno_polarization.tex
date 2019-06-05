@@ -125,7 +125,7 @@ Polarization Correction}
   \item NOAA ADL SDR data are available for period December 2018 to January
     2019 (2 months), with and without polarization correction applied.
   \item \airs L1C data are available for the same time period.
-  \item Simultaneuous near over-pass observational pairs are obtained with
+  \item Simultaneous near over-pass observational pairs are obtained with
     seprations between \airs and \cris FOVs of less than 10 minutes and 8 km.
   \item SNOs for \airs FOVs 43:48 and \cris FORs 15 and 16 are used.
   \item Approx. 242,000 SNO pairs are obtained.
@@ -202,7 +202,66 @@ Polarization Correction}
   \end{center}
    
 \end{frame}
+
 % --------------------------------------------------------------------
+\section{Impact of Polarization Correction on Clear Scenes}
+\begin{frame}
+  \frametitle{Clear Tropical Night Ocean Scene Biases vs ECWMF: 2 Days}
+  \vspace{-0.125in} %\relscale{0.95}
+  \begin{center}
+    \noindent\includegraphics[width=0.75\textwidth]{Figs/bias_in_k_plon_ploff_with_minorg_corrs.pdf}
+  \end{center}
+  \begin{itemize}
+    \item Very small differences as expected
+    \item Mostly visible in the shortwave
+      \end{itemize}
+\end{frame}
+%
+\begin{frame}
+  \frametitle{ECMWF Bias Zoom in Shortwave}
+  \vspace{-0.125in} %\relscale{0.95}
+  \begin{center}
+    \noindent\includegraphics[width=0.75\textwidth]{Figs/bias_in_k_plon_ploff_with_minorg_corrs_sw_zoom.pdf}
+  \end{center}
+\vspace{-0.1in}
+  \begin{itemize}
+    \item Differences visible in shortwave, vary in sign with wavenumber
+    \item Accuracy of EMCWF and RTA too large to conclude if polarization corrections are ``correct''
+      \end{itemize}
+\end{frame}
+% --------------------------------------------------------------------
+\begin{frame}
+  \frametitle{A Detail: Clear Processing Includes Random Selection}
+  \vspace{-0.125in} %\relscale{0.95}
+  \begin{center}
+    \noindent\includegraphics[width=0.7\textwidth]{Figs/calcs_obs_diffs_sep_clear_done_with_data_and_subsetted.pdf}
+  \end{center}
+\vspace{-0.15in}
+  \begin{footnotesize}
+  \begin{itemize}
+    \item Polar On/Off processed separately for clear.  Involves random subsetting to lower number of clear (increases geographical coverage).
+    \item This means that the ECMWF ``Cals'' and clear scene selection for On/Off may be slightly different
+    \item But, the above plot shows this is only a consideration for water vapor 
+      \end{itemize}
+\end{footnotesize}
+    \end{frame}
+
+%
+\begin{frame}
+  \frametitle{Magnitude of Polarization Correction for Clear Scenes}
+  \vspace{-0.125in} %\relscale{0.95}
+  \begin{center}
+    \noindent\includegraphics[width=0.7\textwidth]{Figs/bias_on_minus_bias_off.pdf}
+  \end{center}
+\vspace{-0.05in}
+  \begin{itemize}
+    \item Figure shows nominal effect of polarization correction.
+    \item Accuracy of this figure in the midwave water might be slightly compromised.
+      \end{itemize}
+    \end{frame}
+
+%
+%--------------------------------------------------------------------
 \begin{frame}
   \frametitle{Discussion}
   \vspace{-0.1 in}
@@ -216,3 +275,8 @@ Polarization Correction}
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
